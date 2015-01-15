@@ -1,0 +1,8 @@
+%h1 TRENDS (check WOEID):
+%p= "Trending now: "
+
+%table
+  %tbody
+    - @trends.top_trends.each do |row|
+      %tr
+        %td= row.name
