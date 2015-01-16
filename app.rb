@@ -2,6 +2,7 @@ require 'twitter'
 require 'sinatra'
 require_relative 'trends'
 require 'haml'
+require 'json'
 
 client = Twitter::REST::Client.new do |config|
   config.consumer_key        = ENV['CONKEY']
@@ -11,7 +12,11 @@ client = Twitter::REST::Client.new do |config|
 end
 
 get '/' do
-  @trends = Trends.new(client, 2391279)
-  haml @trends.to_view
-  #send_file 'views/index.html'
+  haml :displaypage
+end
+
+post '/', :provides => :json do
+  @trends = Trends.new(client)
+
+  @trends.show_trends(params['id']).to_h.to_json
 end

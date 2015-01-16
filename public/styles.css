@@ -1,0 +1,108 @@
+.woe {
+    font-family: 'Lucida Grande', Helvetica, sans-serif;
+    text-align: center;
+}
+
+#now {
+    position: absolute;
+    left: 50px;
+}
+
+.embed {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.infobox {
+    position: absolute;
+    margin-top: 20px;
+    right: 50px;
+    width: 300px;
+    background-color: #b0e0e0;
+}
+
+.trends {
+    display: none;
+    position: absolute;
+    left: 50px;
+    margin-top:40px;
+    padding:0px;
+    width:300px;
+    text-align: left;
+    border:1px solid #000000;
+
+    -moz-border-radius-bottomleft:10px;
+    -webkit-border-bottom-left-radius:10px;
+    border-bottom-left-radius:10px;
+
+    -moz-border-radius-bottomright:10px;
+    -webkit-border-bottom-right-radius:10px;
+    border-bottom-right-radius:10px;
+
+    -moz-border-radius-topright:10px;
+    -webkit-border-top-right-radius:10px;
+    border-top-right-radius:10px;
+
+    -moz-border-radius-topleft:10px;
+    -webkit-border-top-left-radius:10px;
+    border-top-left-radius:10px;
+}
+.trends table {
+     border-collapse: collapse;
+     border-spacing: 0;
+     width:100%;
+     height:100%;
+     margin:0px;padding:0px;
+}
+.trends tr:last-child td:last-child {
+      -moz-border-radius-bottomright:10px;
+      -webkit-border-bottom-right-radius:10px;
+      border-bottom-right-radius:10px;
+}
+.trends table tr:first-child td:first-child {
+    -moz-border-radius-topleft:10px;
+    -webkit-border-top-left-radius:10px;
+    border-top-left-radius:10px;
+}
+.trends table tr:first-child td:last-child {
+    -moz-border-radius-topright:10px;
+    -webkit-border-top-right-radius:10px;
+    border-top-right-radius:10px;
+}
+.trends tr:last-child td:first-child{
+     -moz-border-radius-bottomleft:10px;
+     -webkit-border-bottom-left-radius:10px;
+     border-bottom-left-radius:10px;
+}
+.trends tr:hover td {
+      background-color:#ffffff;
+
+
+}
+.trends td {
+    vertical-align:middle;
+
+    background-color:#ffffff;
+
+    border:1px solid #000000;
+    border-width:0px 1px 1px 0px;
+    text-align:left;
+    padding:14px;
+    font-size:14px;
+    font-family:Helvetica;
+    font-weight:bold;
+    color:#000000;
+}
+.trends td:hover {
+    cursor: pointer;
+}
+.trends tr:last-child td {
+     border-width:0px 1px 0px 0px;
+}
+.trends tr td:last-child {
+      border-width:0px 0px 1px 0px;
+}
+.trends tr:last-child td:last-child {
+       border-width:0px 0px 0px 0px;
+}
+
