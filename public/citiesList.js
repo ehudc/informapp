@@ -9,7 +9,7 @@ function initialize() {
         ["New York, New York", 2459115],
         ["Los Angeles, California",	2442047],
         ["Chicago, Illinois", 2379574],
-        ["Wichita, Kansas", 12588472],
+        ["Dallas, Texas", 2388929],
         ["Philadelphia, Pennsylvania", 2471217],
         ["Phoenix, Arizona", 2471390],
         ["Denver, Colorado", 2391279],

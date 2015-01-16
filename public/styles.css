@@ -9,6 +9,12 @@
 }
 
 .embed {
+    display: block;
+    text-align: center;
+    margin: 20px 100px;
+}
+.embed #content {
+    background-color: whitesmoke;
     width: 50%;
     margin: 0 auto;
 }

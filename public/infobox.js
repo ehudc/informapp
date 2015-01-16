@@ -8,6 +8,7 @@ $(document).ready( function() {
         };
 
         var req = "http://en.wikipedia.org/wiki/" + params['query'];
+        $('#content').show();
         $('#content').html('<a href=' + req + ' class="embedly-card">');
 
         $.getJSON(service_url + '?callback=?', params, function(response) {
