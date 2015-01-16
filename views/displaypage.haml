@@ -3,6 +3,25 @@
 
 %table
   %tbody
-    - @trends.top_trends.each do |row|
+    - @trends.top_trends.each_with_index do |row, index|
+    - name = row.name.dup
+    - name.gsub!(/#/,'')
+    - name.gsub!(/(.)([A-Z])/,'\1 \2')
       %tr
-        %td= row.name
+        %td{:class => "trend", :data => {:attr => "#{index}"} }= name
+
+%div
+  %p hello world
+
+
+-#:javascript
+-#  $('body').on('myevent', function (event) {
+-#    event
+-#  })
+
+:javascript
+  $(document).ready( function() {
+    $('.trend').on('click', function () {
+      console.log($(this).html())
+    });
+  });
